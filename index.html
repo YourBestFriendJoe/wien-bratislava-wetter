@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#101827">
-  <meta name="description" content="Live-Wetter für die Radtour Wien–Bratislava am 24. und 25. September 2026">
+  <meta name="description" content="Live-Wetter für die Radtour Wien–Bratislava am 1. und 2. Oktober 2026">
   <title>Wien → Bratislava | Tour-Wetter</title>
   <link rel="preconnect" href="https://api.open-meteo.com">
   <link rel="stylesheet" href="styles.css">
@@ -14,14 +14,16 @@
     <header class="hero">
       <div class="eyebrow">RADTOUR · LIVE-WETTER</div>
       <h1>Wien <span>→</span> Bratislava</h1>
-      <p class="tour-time">24. September, 13:00 Uhr – 25. September, ca. 16:00 Uhr</p>
+      <p class="tour-time">1. Oktober, 13:00 Uhr – 2. Oktober, ca. 16:00 Uhr</p>
       <div class="status-row">
         <span class="status"><i></i> Automatische Aktualisierung</span>
         <span id="updated">Daten werden geladen …</span>
       </div>
     </header>
 
+
     <section id="notice" class="notice" hidden></section>
+
 
     <section class="cities" aria-label="Aktuelles Wetter">
       <article class="weather-card skeleton" id="vienna" data-city="Wien">
@@ -36,17 +38,21 @@
       </article>
     </section>
 
+
     <section class="forecast-panel">
       <div class="section-title"><div><p class="label">TOUR-PROGNOSE</p><h2>Die entscheidenden Stunden</h2></div><button id="refresh" type="button">↻ Aktualisieren</button></div>
       <div id="forecast" class="forecast-grid" aria-live="polite"></div>
     </section>
 
+
     <section class="advice" id="advice">
       <span class="advice-icon">🚲</span><div><p class="label">TOUR-CHECK</p><p id="advice-text">Die Wetterlage wird ausgewertet …</p></div>
     </section>
+
 
     <footer>Daten: Open-Meteo · Zeitzone: Europe/Vienna · Aktualisierung alle 15 Minuten</footer>
   </main>
   <script src="app.js"></script>
 </body>
 </html>
+
